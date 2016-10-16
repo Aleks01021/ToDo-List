@@ -1,3 +1,4 @@
+//Присвоение переменных
 var form  = document.forms.form,
 	check = form.elements.check,
 	year = form.elements.year,
@@ -5,9 +6,9 @@ var form  = document.forms.form,
 	month = form.elements.month,
 	numberMont = form.elements.number_mont,
 	day = form.elements.day,
-	sub = form.elements.submit;
-
-sub.addEventListener('click',getData);
+	btn = form.elements.btn;
+//
+btn.addEventListener('click',getData);
 function getData(){
 	var isChecked = check.checked,
 	content = texter.value,

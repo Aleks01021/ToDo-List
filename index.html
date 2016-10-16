@@ -8,64 +8,83 @@
 </head>
 <body>
 	<div class="container">
-	<form id="form">
-		<!--<label for="text">Text<input type="text" id="text" required></label>-->
-		<label for="check"><input type="checkbox" id="check" required></label>
-		<!--<input type="number" id="data_day">-->
-		<select name="year" id="year">
-			<option value="">2008</option>
-			<option value="">2009</option>
-			<option value="">2010</option>
-			<option value="">2011</option>
-			<option value="">2012</option>
-			<option value="">2013</option>
-			<option value="">2014</option>
-			<option value="">2015</option>
-			<option value="">2016</option>
-		</select>
-		<select name="month" id="month">
-			<option value="">January</option>
-			<option value="">February</option>
-			<option value="">March</option>
-			<option value="">April</option>
-			<option value="">May</option>
-			<option value="">June</option>
-			<option value="">July</option>
-			<option value="">August</option>
-			<option value="">September</option>
-			<option value="">October</option>
-			<option value="">November</option>
-			<option value="">December</option>
-		</select>
-		<select name="number" id="number_mont">
-			<option value="">1</option>
-			<option value="">2</option>
-			<option value="">3</option>
-			<option value="">4</option>
-			<option value="">5</option>
-			<option value="">6</option>
-			<option value="">7</option>
-			<option value="">8</option>
-			<option value="">9</option>
-			<option value="">10</option>
-			<option value="">11</option>
-			<option value="">12</option>
-			<option value="">13</option>
-			<option value="">14</option>
-		</select>
-		<select name="day" id="day">
-			<option value="">Monday</option>
-			<option value="">Tuesday</option>
-			<option value="">Wednesday</option>
-			<option value="">Thursday</option>
-			<option value="">Friday</option>
-			<option value="">Saturday</option>
-			<option value="">Sunday</option>
-		</select>
-		<label for=""><textarea name="" id="texter" cols="30" rows="3" required></textarea></label>
-		<button type="button" class="btn btn-primary" id="submit">Отправить</button>
-
-	</form>
+		<div class="color_form">
+		<form id="form">
+			<!--<label for="text">Text<input type="text" id="text" required></label>-->
+			<label for="check">Да/нет<input type="checkbox" id="check" required></label>
+			<!--<input type="number" id="data_day">-->
+			<label for="">Выбирете год<select name="year" id="year">
+				<option value="">2008</option>
+				<option value="">2009</option>
+				<option value="">2010</option>
+				<option value="">2011</option>
+				<option value="">2012</option>
+				<option value="">2013</option>
+				<option value="">2014</option>
+				<option value="">2015</option>
+				<option value="">2016</option>
+			</select></label>
+			<label for="">Выбирете месяц<select name="month" id="month">
+				<option value="">January</option>
+				<option value="">February</option>
+				<option value="">March</option>
+				<option value="">April</option>
+				<option value="">May</option>
+				<option value="">June</option>
+				<option value="">July</option>
+				<option value="">August</option>
+				<option value="">September</option>
+				<option value="">October</option>
+				<option value="">November</option>
+				<option value="">December</option>
+			</select></label>
+			<label for="">Выбирете число<select name="number" id="number_mont">
+				<option value="">1</option>
+				<option value="">2</option>
+				<option value="">3</option>
+				<option value="">4</option>
+				<option value="">5</option>
+				<option value="">6</option>
+				<option value="">7</option>
+				<option value="">8</option>
+				<option value="">9</option>
+				<option value="">10</option>
+				<option value="">11</option>
+				<option value="">12</option>
+				<option value="">13</option>
+				<option value="">14</option>
+				<option value="">15</option>
+				<option value="">16</option>
+				<option value="">17</option>
+				<option value="">18</option>
+				<option value="">19</option>
+				<option value="">20</option>
+				<option value="">21</option>
+				<option value="">22</option>
+				<option value="">23</option>
+				<option value="">24</option>
+				<option value="">25</option>
+				<option value="">26</option>
+				<option value="">27</option>
+				<option value="">28</option>
+				<option value="">29</option>
+				<option value="">30</option>
+				<option value="">31</option>
+			</select></label><br>
+			<label for="">Выбирете день<select name="day" id="day">
+				<option value="">Monday</option>
+				<option value="">Tuesday</option>
+				<option value="">Wednesday</option>
+				<option value="">Thursday</option>
+				<option value="">Friday</option>
+				<option value="">Saturday</option>
+				<option value="">Sunday</option>
+			</select></label>
+			<label for=""><textarea name="" id="texter" cols="30" rows="3" required></textarea></label>
+			<button type="button" class="btn btn-primary" id="btn">Отправить</button>
+		</form>
+		</div>
+	<div class="table_content">
 	<table class="table table-bordered">
 		<thead>
 		  <tr>
@@ -97,6 +116,7 @@
 
 		</tbody>
 	  </table>
+	  </div>
 	  </div>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
