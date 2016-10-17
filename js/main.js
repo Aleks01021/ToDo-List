@@ -7,7 +7,7 @@ var form  = document.forms.form,
 	numberMont = form.elements.number_mont,
 	day = form.elements.day,
 	btn = form.elements.btn;
-//
+
 btn.addEventListener('click',getData);
 function getData(){
 	var isChecked = check.checked,
@@ -16,13 +16,14 @@ function getData(){
 	monthContent = month.value,
 	numberMontContent = number_mont.value,
 	dayContent = day.value;
-	generationTodo({
+	generateTodo({
 		check:isChecked,
 		texter:content,
 		year:yearContent,
 		month:monthContent,
 		numberMont:numberMontContent,
 		day:dayContent
+
 
 	});
 
@@ -32,6 +33,13 @@ function getData(){
 function generationTodo(params){
 
 };
+function todoList(){
 
 
+	/*var item = document.getElementByid('texter').value
+	var texter = document.createTextNode(item);
+	var newItem = document.createElement('li');
+	newItem.appendChild(texter)
+	document.getElementById('todoList').appendChild(newItem)*/
+};
 

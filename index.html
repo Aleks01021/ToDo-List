@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>ToDo</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -11,7 +11,7 @@
 		<div class="color_form">
 		<form id="form">
 			<!--<label for="text">Text<input type="text" id="text" required></label>-->
-			<label for="check">Да/нет<input type="checkbox" id="check" required></label>
+			<label for="check">yes/no<input type="checkbox" id="check" required></label>
 			<!--<input type="number" id="data_day">-->
 			<label for="">Выбирете год<select name="year" id="year">
 				<option value="">2008</option>
@@ -81,11 +81,11 @@
 				<option value="">Sunday</option>
 			</select></label>
 			<label for=""><textarea name="" id="texter" cols="30" rows="3" required></textarea></label>
-			<button type="button" class="btn btn-primary" id="btn">Отправить</button>
+			<button type="button" class="btn btn-primary" id="btn" onclick="todoList()" >Отправить</button>
 		</form>
 		</div>
 	<div class="table_content">
-	<table class="table table-bordered">
+	<table class="table able table-hover">
 		<thead>
 		  <tr>
 		  	<th>Status</th>
@@ -95,24 +95,17 @@
 		  </tr>
 		</thead>
 		<tbody>
-		  <!--<tr>
-		  <td>John</td>
+		  <tr>
+		  <td>
+		  <ol id="todoList">
+		  	<li>John</li>
+		  </ol>
+		  </td>
 			<td>John</td>
 			<td>Doe</td>
-			<td>john@example.com</td>
+			<td>john@example.com
+			<button class="btn btn-danger" id="close">Delete</button><label for="">save</label><input type="checkbox"</td>
 		  </tr>
-		  <tr>
-		  <td>John</td>
-			<td>Mary</td>
-			<td>Moe</td>
-			<td>mary@example.com</td>
-		  </tr>
-		  <tr>
-		  <td>John</td>
-			<td>July</td>
-			<td>Dooley</td>
-			<td>july@example.com</td>
-		  </tr>-->
 
 		</tbody>
 	  </table>
