@@ -4,14 +4,7 @@ form{
 	padding: 10px;
 	margin: 10px;
 }
-select{
-	padding: 5px;
-	font-size: 12px;
-}
-select:hover{
-	border-color:royalblue;
-	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-}
+
 label, textarea{
 	margin-top: 10px;
 }
