@@ -1,5 +1,5 @@
 //Присвоение переменных
-//var form  = document.getElementById('#form');
+var form  = document.getElementById('#form');
 var check = document.getElementById('#check');
 var formControl = document.getElementById('form_control')
 var texter = document.getElementById('#texter');
@@ -7,17 +7,14 @@ var todoList = document.getElementById('#todoList');
 
 function newItem() {
 
-	//Checkbox
+//Checkbox
 	var isChecked = document.getElementById('check').value;
 	var check = document.createTextNode(isChecked);
-
 	var newItem1 = document.createElement("li");
 	newItem1.appendChild(check);
 	document.getElementById("todoList").appendChild(newItem1);
-	var ch = document.getElementById("check").checked;
-    document.getElementById("todoList").innerHTML = ch;
-	//Date
 
+	//Date
 	var dataControl = document.getElementById('form_control').value;
 	var formControl = document.createTextNode(dataControl);
 	var newItem2 = document.createElement('li');
@@ -38,14 +35,18 @@ function newItem() {
 };
 
 
+
 $(function () {
 $('#datetimepicker2').datetimepicker(
       {language: 'ru'}
    );
 });
 
-var text = myBoolVar ? 'yes' : 'no'
-
+$(document).ready(function(){
+    $('#close').click(function(){
+        $("#todoList").empty();
+    });
+});
 
 
 
