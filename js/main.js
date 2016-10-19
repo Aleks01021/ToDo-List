@@ -10,6 +10,7 @@ function newItem() {
 	//Checkbox
 	var isChecked = document.getElementById('check').value;
 	var check = document.createTextNode(isChecked);
+
 	var newItem1 = document.createElement("li");
 	newItem1.appendChild(check);
 	document.getElementById("todoList").appendChild(newItem1);
@@ -43,7 +44,7 @@ $('#datetimepicker2').datetimepicker(
    );
 });
 
-
+var text = myBoolVar ? 'yes' : 'no'
 
 
 
