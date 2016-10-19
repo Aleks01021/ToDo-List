@@ -7,12 +7,20 @@ form{
 
 label, textarea{
 	margin-top: 10px;
+	width: 350px;
+   	padding: 5px;
 }
 .table_content li{
 	width: 100%;
 	font-size: 14px;
 	border: 1px solid  cadetblue;
+	margin: 5px;
+    padding: 10px;
 
+}
+li:hover{
+	background-color: burlywood;
+	transition: 1s;
 }
 
 .color_form{
